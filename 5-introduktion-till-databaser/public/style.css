@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    box-sizing:sans-serif;
+}
+body{
+    padding: 0;
+    font-family: monospace;
+    line-height: 1.5;
+    font-size: 100%;
+    margin: 4rem;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#games{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+#games thead tr {
+    background-color: #4682B4;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+#games th,
+#games td {
+    text-align: center;
+    padding: 0.4rem 1rem;
+}
+#games tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+#games tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+#games tbody tr:last-of-type {
+    border-bottom: 2px solid #4682B4;
+}
+#games tbody tr.active-row {
+    font-weight: bold;
+    color: #4682B4;
+}
