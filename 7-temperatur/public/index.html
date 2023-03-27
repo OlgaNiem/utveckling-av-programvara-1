@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="select">
+        <label for="pet-select">Choose a year</label>
+            <select name="year" id="year-select" onchange="getSelectValue(this.value)">
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021" selected>2021</option>
+            </select>
+    </div>
+
+    <div id="temperatureTable">
+        <table id="temperatures"></table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

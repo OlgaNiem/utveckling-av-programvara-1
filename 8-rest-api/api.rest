@@ -1,0 +1,23 @@
+POST http://localhost:3000/api/cars HTTP/1.1
+content-type: application/json
+
+{
+    "brand": "BMW",
+    "model": "316",
+    "year": 1998
+}
+
+### 
+GET http://localhost:3000/api/cars HTTP/1.1
+
+### 
+PUT http://localhost:3000/api/cars/1 HTTP/1.1
+content-type: application/json
+
+{
+    "brand": "Nissan",
+    "model": "Micra"
+}
+###
+DELETE http://localhost:3000/api/cars/1 HTTP/1.1
+content-type: application/json
