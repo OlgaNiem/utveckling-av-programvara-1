@@ -1,10 +1,11 @@
 const express = require('express');
 const {db} = require('./db');
+const path = require('path');
 const server = express();
 
-server.use(express.json());
-server.use(express.urlencoded({extended: true}))
-
+//server.use(express.json());
+//server.use(express.urlencoded({extended: true}))
+server.use(express.static(path.join('public')));
 
 server.get('/api/cars', (request, response) => {
 // hämtar all data
