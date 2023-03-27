@@ -4,18 +4,18 @@ function checkNumber() {
 
     console.log(userNumber);
     if(userNumber > 0){
-    console.log('Positive Number')
-    document.getElementById('yourNumber').innerHTML =  userNumber + ' Talet är positivt' 
-    characterCounterElement.classList = 'text-positiv';
+        console.log('Positive Number')
+        document.getElementById('yourNumber').innerHTML =  userNumber + ' Talet är positivt' 
+        characterCounterElement.classList = 'text-positiv';
     }
     else if(userNumber < 0){
-    console.log('Its a negative number')
-    document.getElementById('yourNumber').innerHTML =  userNumber + ' Talet är negativt' 
-    characterCounterElement.classList = 'text-negativ';
+        console.log('Its a negative number')
+        document.getElementById('yourNumber').innerHTML =  userNumber + ' Talet är negativt' 
+        characterCounterElement.classList = 'text-negativ';
     }
     else{
-    console.log('Its a zero')
-    document.getElementById('yourNumber').innerHTML =  userNumber + ' Talet är noll'
-    characterCounterElement.classList = 'text-noll';
+        console.log('Its a zero')
+        document.getElementById('yourNumber').innerHTML =  userNumber + ' Talet är noll'
+        characterCounterElement.classList = 'text-noll';
     }  
 }
