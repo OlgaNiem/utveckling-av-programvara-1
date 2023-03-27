@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "message": "Hey, what's up? How are you doing?",
+        "time": "11:20"
+        
+    },
+    {
+        "id": 2,
+        "message": "I'm doing pretty well, thanks for asking! How about you?"
+    },
+    {
+        "id": 3,
+        "message": "Why did the tomato turn red?"
+    },
+    {
+        "id": 4,
+        "message": "Because it saw the salad dressing!"
+    },
+    {
+        "id": 5,
+        "message": "Because they make up everything!"
+    },
+    {
+        "id": 6,
+        "message": "We must let go of the life we have planned, so as to accept the one that is waiting for us."
+    },
+    {
+        "id": 7,
+        "message": "If you can dream it, you can achieve it."
+    }
+]
