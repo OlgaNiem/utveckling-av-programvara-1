@@ -1,15 +1,16 @@
 function checkAge() {
+    // e.preventDefault()
     const userAge = document.getElementById('age').value;
         console.log(userAge);
-    if (userAge < 0) {
-        console.log("Ange en giltig ålder");
-    } else if (userAge >= 0 && age <= 12) {
-        console.log("Du är ett barn");
-    } else if (userAge >= 13 && age <= 19) {
-        console.log("Du är en tonåring");
-    } else if (userAge >= 20 && age <= 64) {
-        console.log("Du är en vuxen");
+    if (userAge <= 0) {
+        document.getElementById('result').innerHTML = 'Ange en giltig ålder';
+    } else if (userAge >= 1 && userAge <= 12) {
+        document.getElementById('result').innerHTML = 'Du är ett barn';
+    } else if (userAge >= 13 && userAge <= 19) {
+        document.getElementById('result').innerHTML = 'Du är en tonåring';
+    } else if (userAge >= 20 && userAge <= 64) {
+        document.getElementById('result').innerHTML = 'Du är en vuxen';
     } else {
-        console.log("Du är en senior");
+        document.getElementById('result').innerHTML = 'Du är en senior';
     }
 }

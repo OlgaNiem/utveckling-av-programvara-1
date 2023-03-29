@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#container {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: 3rem;
+    width: 60%;
+}
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#age {
+    display: block;
+    width: -webkit-fill-available;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+#age:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+#btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    background-color: #3a86ff;
+    color: #fff;
+    border: 1px solid #3a86ff;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+    width: 100%;
+}
