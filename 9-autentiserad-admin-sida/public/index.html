@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/api/login" method="post">
+            <div class="field">
+                <h3>User Name</h3>
+                <input type="text" id="username" name="username" autofocus placeholder="Write your user name">
+            </div>
+            <div class="field">
+                <h3>Password</h3>
+                <input type="password" id="password" name="password" autofocus placeholder="Write your password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+<script src="app.js" type="module"></script>
+</body>
+</html>

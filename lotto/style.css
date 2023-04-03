@@ -1,0 +1,20 @@
+.submit{
+    margin-bottom:10px;
+  }
+  button{
+    padding:10px;
+    background:#eee;
+    border:solid 1px #ddd;
+    font-size:18px;
+    color:#555;
+    cursor:pointer;
+    outline:none;
+  }
+  button:hover{
+    background:#999;
+    color:#fff;
+  }
+  #numbers{
+    font-size:18px;
+    color:#555;
+  }
