@@ -45,7 +45,7 @@ server.get('/admin', (request, response) => {
     request.sessionStore.get(request.cookies.session_id, (err, data) => {
         if(err)throw err
         if(data == null){
-            response.redirect('back')
+           return response.redirect('back')
         }
         response.sendFile(path.resolve('public/admin.html'))
     })
@@ -71,14 +71,13 @@ server.post('/api/login', (request, response) => {
 
 server.get('/api/logout', (request, response, next) => {
     // tar bort sessionen
-    request.session.destroy(request.cookies.session_id, (err, data) => {
-        if(err)throw err
-        if(data == null){
-            response.redirect('back')
-        }
-        response.sendFile(path.resolve('public/index.html'))
+//googla!!!!!!
+response.cookie('session_id', '')
+    
+        
+return response.redirect('/')
     })
-})
+
   
 
 
