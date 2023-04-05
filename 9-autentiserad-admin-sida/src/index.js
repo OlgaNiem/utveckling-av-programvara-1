@@ -71,15 +71,9 @@ server.post('/api/login', (request, response) => {
 
 server.get('/api/logout', (request, response, next) => {
     // tar bort sessionen
-//googla!!!!!!
-response.cookie('session_id', '')
-    
-        
-return response.redirect('/')
-    })
-
-  
-
+    response.cookie('session_id', '')   
+    return response.redirect('/')
+})
 
 server.listen(3000, () => {
     console.log('Server is listening on localhost:3000');
