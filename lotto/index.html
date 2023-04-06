@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Lotto</title>
+    <title>Document</title>
 </head>
 <body>
-<div class="submit">
-  <button onclick="generate(7, 1, 49);">Generate</button>
-</div>
-<div id="numbers"></div>
+    <h1>Lotto</h1>
+    <p>Gissa sju nummer mellan 1 och 35</p>
+    <input type="text" id="guess1">
+    <input type="text" id="guess2">
+    <input type="text" id="guess3">
+    <input type="text" id="guess4">
+    <input type="text" id="guess5">
+    <input type="text" id="guess6">
+    <input type="text" id="guess7">
+    <button onclick="check()">Kolla</button>
+    <p id="result"></p>
+    
+    <button onclick="playAgain()">Spela igen</button>
+    
+    <div class="rules">
+        <h1>Spelreglerna</h1>
+        <p>
+            I inmatningsrutorna anger du 7 tal mellan 1 och 35 som du tror är vinnande. 
+            Klicka sedan på knappen "Kolla". 
+            Datorn  slumpar fram  sju tal och jämför dem med dina gissningar. 
+            Du får sedan se hur många av de tal du gissade som var korrekta.
+    	</p>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
