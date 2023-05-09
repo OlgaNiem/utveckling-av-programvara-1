@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "text": "Hey, what's up? How are you doing?"
+
+    },
+    {
+        "id": 2,
+        "text": "I'm doing pretty well, thanks for asking! How about you?"
+    },
+    {
+        "id": 3,
+        "text": "Why did the tomato turn red?"
+    },
+    {
+        "id": 4,
+        "text": "Because it saw the salad dressing!"
+    }
+]

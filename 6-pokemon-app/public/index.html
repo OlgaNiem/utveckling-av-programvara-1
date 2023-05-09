@@ -12,6 +12,14 @@
         <input type="text" id="search" placeholder="Write something here...">
         <button id="btn">Filter</button>
     </div>
+    <div id="select">
+        <label for="pet-select">Choose a sorting method</label>
+            <select name="select" id="" onchange="getSelectValue(this.value)">
+                <option value="height">Height</option>
+                <option value="weight">Weight</option>
+                <option value="experience" selected>Base experience</option>
+            </select>
+    </div>
     <div id="pokemons"></div>
     <script src="app.js"></script>
 </body>

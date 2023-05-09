@@ -1,3 +1,22 @@
+const messageContainer = document.querySelector('#message');
+
+function addMessage(message) {
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('container', 'parent');
+  
+    const messageText = document.createElement('div');
+    messageText.classList.add('message');
+    messageText.innerHTML = `
+      <p>${message.text}</p>
+      <span>${new Date(message.time).toLocaleString()}</span>
+    `;
+  
+    messageElement.appendChild(messageText);
+    messageContainer.appendChild(messageElement);
+  }
+  
+
+
 fetchMessage();
 
 document.querySelector('#btn').addEventListener('click', async(e) =>{
@@ -5,8 +24,8 @@ document.querySelector('#btn').addEventListener('click', async(e) =>{
    
     const input = document.querySelector('input');
     const message = {
-        message: input.value
-    }
+        text: input.value
+    };
     const sent = await fetch('/api/messages', {
         method: 'POST',
         headers: {

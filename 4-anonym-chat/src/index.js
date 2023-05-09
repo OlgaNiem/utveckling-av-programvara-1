@@ -1,9 +1,9 @@
 const express = require('express');
 const path = require('path');
-const { v4 } = require('uuid');
+const uuid = require('uuid');
+
 const app = express();
-const fs = require('fs');
-//fs.writeFileSync()
+
 
 const messages = require('./data/messages.json').map(item => {
     return {id: item.id, 
@@ -21,12 +21,15 @@ app.get('/api/messages', (request, response) => {
 });
 
 app.post('/api/messages', (request, response) => {
-   messages.push({
+messages.push({
     id: v4(),
     message: request.body.message,
     time: new Date().getTime()
    })
-    console.log(request.body);
+    
+
+    const message = { id, text, time};
+    messages.push(message);
     response.status(200).json(messages)
     
 });
